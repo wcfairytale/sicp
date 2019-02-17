@@ -50,7 +50,7 @@
   (and
    (not (= base 1))
    (not (= base (- m 1)))
-   (= 1 (remainder base m))))
+   (= 1 (remainder (square base) m))))
 
 (define (expmod_mr base exp m)
   (cond ((= exp 0) 1)
